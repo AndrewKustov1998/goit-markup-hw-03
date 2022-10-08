@@ -1,5 +1,4 @@
 /* ---------------------- General styles ----------------------*/
-
 :root {
   --primaty-text-color: #212121;
   --secondary-text-color: #757575;
@@ -17,6 +16,18 @@ body {
 
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 .logo {
@@ -54,9 +65,25 @@ body {
 }
 
 .section-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ---------------------- Header styles ----------------------*/
@@ -109,6 +136,8 @@ body {
 }
 
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -119,6 +148,9 @@ body {
 }
 
 .hero-button {
+  padding: 10px 32px;
+  border-radius: 4px;
+
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-family: 'Roboto';
@@ -136,6 +168,8 @@ body {
 
 /* ---------------------- Advantages section ---------------------- */
 .advantages-li-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -160,7 +194,13 @@ body {
   background-color: var(--primary-white-color);
 }
 
-.our-team-section .our-team-name {
+.employee-img {
+  margin-bottom: 30px;
+}
+
+.our-team-name {
+  padding-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -176,6 +216,10 @@ body {
 /* ---------------------- !!! portfolio.html !!! ---------------------- */
 
 /* ---------------------- Completed projects section ---------------------- */
+.filter {
+  margin-bottom: 34px;
+}
+
 .filer-button {
   font-family: Roboto;
   font-weight: 500;
@@ -195,7 +239,13 @@ body {
   color: var(--accent-color);
 }
 
+.completed-projects-img {
+  margin-bottom: 20px;
+}
+
 .completed-projects-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -211,10 +261,16 @@ body {
 
 /* ---------------------- Footer ---------------------- */
 .footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--hero-background-color);
 }
 
 .logo-footer {
+  display: inline-block;
+  margin-bottom: 20px;
+
   color: var(--primary-white-color);
 }
 
@@ -223,6 +279,8 @@ body {
 }
 
 .footer-address {
+  margin-bottom: 9px;
+
   font-size: 14px;
   font-style: normal;
   line-height: 1.71;
@@ -240,4 +298,9 @@ body {
 .footer-contact-info .link:hover,
 .footer-contact-info .link:focus {
   color: var(--accent-color);
+}
+
+.mail {
+  display: inline-block;
+  margin-bottom: 9px;
 }
