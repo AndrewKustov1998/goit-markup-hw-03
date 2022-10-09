@@ -87,8 +87,15 @@ ul {
 }
 
 /* ---------------------- Header styles ----------------------*/
+.header-flex {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
 
 .logo-header {
+  margin-right: 93px;
+
   color: var(--primary-black-color);
 }
 
@@ -96,14 +103,33 @@ ul {
   color: var(--accent-color);
 }
 
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item {
+  margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+
+/* Check why this method is not working */
+/* .site-nav .item:not(last-child) {
+  margin-right: 50px;
+} */
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primaty-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-
   letter-spacing: 0.02em;
-
-  color: var(--primaty-text-color);
 }
 
 .link.current {
@@ -115,14 +141,21 @@ ul {
   color: var(--accent-color);
 }
 
+.mail-tel-section {
+  display: flex;
+  margin-left: auto;
+}
+
+.mail-tel-section .item + .item {
+  margin-left: 50px;
+}
+
 .mail-tel-section .link {
+  color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-
   letter-spacing: 0.02em;
-
-  color: var(--secondary-text-color);
 }
 
 .mail-tel-section .link:hover,
@@ -136,8 +169,11 @@ ul {
 }
 
 .hero-title {
+  text-align: center;
+  margin: 0 auto;
   margin-bottom: 30px;
 
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -148,6 +184,8 @@ ul {
 }
 
 .hero-button {
+  display: block;
+  margin: 0 auto;
   padding: 10px 32px;
   border-radius: 4px;
 
@@ -167,6 +205,10 @@ ul {
 }
 
 /* ---------------------- Advantages section ---------------------- */
+.advantages-section {
+  padding-bottom: 0;
+}
+
 .advantages-li-title {
   margin-bottom: 10px;
 
@@ -183,8 +225,28 @@ ul {
   color: var(--secondary-text-color);
 }
 
-/* ---------------------- What we are doing section ---------------------- */
+.advantages-list {
+  display: flex;
+}
 
+.advantages-list .item {
+  max-width: calc((100% - 90px) / 4);
+  margin-right: 30px;
+}
+
+.advantages-list .item:last-child {
+  margin-right: 0;
+}
+
+/* ---------------------- What we are doing section ---------------------- */
+.what-we-doing-title {
+  text-align: center;
+}
+
+.what-we-doing-list {
+  display: flex;
+  gap: 30px;
+}
 /* ---------------------- Our team section ---------------------- */
 .our-team-section {
   background-color: var(--button-color);
@@ -194,12 +256,22 @@ ul {
   background-color: var(--primary-white-color);
 }
 
+.our-team-title {
+  text-align: center;
+}
+
+.our-team-list {
+  display: flex;
+  gap: 30px;
+}
+
 .employee-img {
   margin-bottom: 30px;
 }
 
 .our-team-name {
   padding-bottom: 10px;
+  text-align: center;
 
   font-weight: 500;
   font-size: 16px;
@@ -207,6 +279,9 @@ ul {
 }
 
 .our-team-position {
+  text-align: center;
+  padding-bottom: 30px;
+
   font-size: 16px;
   line-height: 1.19;
 
