@@ -5,6 +5,8 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --primary-black-color: #000000;
+  --projects-border-color: #eeeeee;
+  --header-border-color: #ececec;
 
   --hero-background-color: #2f303a;
   --button-color: #f5f4fa;
@@ -86,7 +88,11 @@ ul {
   margin-right: auto;
 }
 
-/* ---------------------- Header styles ----------------------*/
+/* ---------------------- Header ----------------------*/
+.header-section {
+  border: 1px solid var(--header-border-color);
+}
+
 .header-flex {
   display: flex;
   /* justify-content: space-between; */
@@ -292,10 +298,16 @@ ul {
 
 /* ---------------------- Completed projects section ---------------------- */
 .filter {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
   margin-bottom: 34px;
 }
 
 .filer-button {
+  padding: 6px 25px;
+  border-radius: 4px;
+
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -314,8 +326,14 @@ ul {
   color: var(--accent-color);
 }
 
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
 .completed-projects-img {
-  margin-bottom: 20px;
+  display: block;
 }
 
 .completed-projects-title {
@@ -332,6 +350,15 @@ ul {
   line-height: 1.87;
 
   color: var(--secondary-text-color);
+}
+
+.projects-card-border {
+  border-radius: 0px 0px 4px 4px;
+  border-bottom: 1px solid var(--projects-border-color);
+  border-left: 1px solid var(--projects-border-color);
+  border-right: 1px solid var(--projects-border-color);
+
+  padding: 20px 24px;
 }
 
 /* ---------------------- Footer ---------------------- */
